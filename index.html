@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>AM Calculator</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="style.css" media="screen" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+
+</head>
+<body>
+
+
+<script src="jquery-3.1.1.min.js"></script>
+<div class="jumbotron text-center">
+  <h1>AM Campaign </h1>
+</div>
+  <script src="calculation.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0/dist/Chart.min.js"></script>
+
+<div class="container">
+<div id="count_cpm">
+
+CPC (Cost Per Click)<br> <input type="text" id="CPC" value="0.025" size="5"/>$<br>
+
+Ammount of clicks <br> <input type="text" id="ammountClick" value="302" size="5"/><br>
+Ammount of conversions <br> <input type="text" id="ammountCR" value="2" size="5"/><br>
+
+Payout <br><input type="text" id="CR" value="0.40" size="6"/>$<br>
+
+Ammount of impressions<br> <input type="text" id="currentImpressions" value="20832" size="5"/><br>
+<br>
+<input type="button" class="button" value="Analyze " onclick="count()">
+</div>
+
+<div class="results">
+<div class="cpm_result"></div>
+<div class="ctr_result"></div>
+<div class="cr_result"></div>
+<div class="actualCost"></div>
+<div class="revenue"></div>
+<div class="profit"></div>
+<div class="cr_to_cpm_result"></div>
+<br>
+<div class="proportion"></div>
+<div class="confIntPlus"></div>
+<div class="confIntMinus"></div><br>
+<div class="statisticalRoiResultMinus"></div><br>
+<div class="statisticalRoiResultPlus"></div>
+</div>
+<div class="chart">
+  <canvas id="line-chart" width="350" height="300"></canvas>
+  <canvas id="line-chartStat" width="350" height="300"></canvas>
+</div>
+
+
+</body>
+</html>

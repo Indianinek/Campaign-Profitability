@@ -1,0 +1,27 @@
+.container {
+  display: flex;
+}
+.jumbotron{
+  height:150px;
+}
+.container > div {
+  flex: 1; /*grow*/
+}
+#count_cpm{
+ width:350px;
+ height:200px;
+
+}
+.cpm_result{
+  width:200px;
+}
+.cr_to_cpm_result{
+ width:400px;
+}
+.proportion{
+ width:400px;
+}
+.results{
+ width:600px;
+ font-size:18px;
+}
